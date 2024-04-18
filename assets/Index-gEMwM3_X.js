@@ -1,1 +1,0 @@
-import{L as e}from"./Default-DdAhcmyJ.js";import{_ as r,c as t,w as a,r as n,o as s,f as c}from"./index-Dc2auA2K.js";import"./admin-logo-CC1hBoGP.js";const p={components:{LayoutWrraper:e}};function _(m,f,u,d,i,l){const o=n("LayoutWrraper");return s(),t(o,null,{default:a(()=>[c(" Home ")]),_:1})}const y=r(p,[["render",_]]);export{y as default};

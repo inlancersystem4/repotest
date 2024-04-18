@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sniper AI - Interview</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <style>
+        .btn-liner {
+            background: transparent linear-gradient(72deg, #C95C93 0%, #D8744C 100%) 0% 0% no-repeat padding-box;
+            transition: background-image 0.2s;
+            color: white;
+            border-radius: 12px;
+            padding: 12px 18px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .btn-liner:hover,
+        .btn-liner:focus {
+            background: transparent linear-gradient(72deg, #C95C93 0%, #D8744C 100%) 0% 0% no-repeat padding-box;
+        }
+
+        .check-system {
+            background-image: url("./img/check-mark.svg");
+            background-size: 14px;
+            background-repeat: no-repeat;
+            background-position: 8px 8px;
+        }
+
+        .agree-input {
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 0;
+            border: 1px solid #cb5d92;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .agree-input:checked::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 9px;
+            height: 9px;
+            border: 0;
+            background: transparent linear-gradient(72deg, #C95C93 0%, #D8744C 100%) 0% 0%;
+        }
+
+        .system-box {
+            border-radius: 12px;
+            box-shadow: 1px 1px 32px -24px rgba(0, 0, 0, 0.84);
+            -webkit-box-shadow: 1px 1px 32px -24px rgba(0, 0, 0, 0.84);
+            -moz-box-shadow: 1px 1px 32px -24px rgba(0, 0, 0, 0.84);
+        }
+
+        @media (min-width: 640px) {
+            .btn-liner {
+                border-radius: 0.6dvw;
+                padding: 0.9dvw 1.8dvw;
+                font-size: 1dvw;
+            }
+
+            .agree-input {
+                width: 1.2dvw;
+                height: 1.2dvw;
+            }
+
+            .check-system {
+                background-position: 0.4dvw 0.4dvw;
+                background-size: 1.4dvw;
+            }
+
+            .system-box {
+                box-shadow: 0px 0.2dvw 0.8dvw -0.2dvw rgba(0, 0, 0, 0.43);
+                -webkit-box-shadow: 0px 0.2dvw 0.8dvw -0.2dvw rgba(0, 0, 0, 0.43);
+                -moz-box-shadow: 0px 0.2dvw 0.8dvw -0.2dvw rgba(0, 0, 0, 0.43);
+                border-radius: 0.6dvw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="w-full sm:h-dvh sm:overflow-hidden bg-white">
+        <div class="w-full px-2 sm:px-0 h-full flex flex-col justify-between mx-auto">
+            <div class="h-full w-full">
+                <div class="sm:space-y-[1dvw] sm:pt-[0.6dvw] space-y-2 pt-1.5 w-full">
+                    <img src="./img/logo.png" alt="company logo" class="mx-auto h-auto sm:w-[21dvw]" />
+                    <div class="w-full bg-liner text-center sm:p-[1.5dvw] p-3.5 space-y-2.5 sm:space-y-[0.6dvw]">
+                        <h1 class="text-white sm:text-[1dvw] text-base block leading-normal">Hi Jack Denny,</h1>
+                        <p class="text-white sm:text-[0.9dvw] text-xs block leading-normal">
+                            We glad to inform you are shortlisted for
+                            <a href="#" class="underline">"Sr Manager / Agilie Coach at GlobalLogic"</a>
+                            post at "IT Company".
+                        </p>
+                        <p class="text-white sm:text-[0.9dvw] text-xs block leading-normal">
+                            Please read instruction carefullly before start video interview
+                        </p>
+                    </div>
+                </div>
+                <div class="sm:space-y-[1dvw] sm:py-[1dvw] py-6 space-y-2">
+                    <div class="sm:space-y-[1dvw] space-y-3.5">
+                        <p class="text-center sm:text-[1dvw] text-xs leading-normal">
+                            Please Check below configuration of your system before start interview.
+                        </p>
+                        <ul class="grid grid-cols-2 sm:gap-[1.5dvw] gap-2 sm:max-w-[24dvw] max-w-full mx-auto">
+                            <li
+                                class="w-full bg-white  flex flex-col items-center justify-center sm:gap-[1dvw] gap-1.5 relative sm:py-[1.8dvw] py-6  system-box check-system ">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    class="sm:w-[2.5dvw] sm:h-[2.5dvw] w-10 h-10" viewBox="0 0 37.947 59.219">
+                                    <defs>
+                                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
+                                            gradientUnits="objectBoundingBox">
+                                            <stop offset="0" stop-color="#d7734f" />
+                                            <stop offset="1" stop-color="#c95c93" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g id="mic_1_" data-name="mic (1)" transform="translate(-78.157)">
+                                        <g id="Group_364" data-name="Group 364" transform="translate(78.157 28.519)">
+                                            <g id="Group_363" data-name="Group 363" transform="translate(0)">
+                                                <path id="Path_13" data-name="Path 13"
+                                                    d="M116.1,211.652a2.09,2.09,0,0,0-4.181,0,14.793,14.793,0,0,1-29.585,0,2.09,2.09,0,0,0-4.181,0A18.994,18.994,0,0,0,95.04,230.507v5.574h-7.6a2.09,2.09,0,1,0,0,4.181h19.384a2.09,2.09,0,1,0,0-4.181h-7.6v-5.574A18.994,18.994,0,0,0,116.1,211.652Z"
+                                                    transform="translate(-78.157 -209.562)"
+                                                    fill="url(#linear-gradient)" />
+                                            </g>
+                                        </g>
+                                        <g id="Group_366" data-name="Group 366" transform="translate(85.473)">
+                                            <g id="Group_365" data-name="Group 365" transform="translate(0)">
+                                                <path id="Path_14" data-name="Path 14"
+                                                    d="M143.573,0a11.657,11.657,0,0,0-11.657,11.657V30.533a11.657,11.657,0,0,0,23.314,0V11.657A11.657,11.657,0,0,0,143.573,0Z"
+                                                    transform="translate(-131.916)" fill="url(#linear-gradient)" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-center sm:text-[1dvw] leading-normal text-sm capitalize">Microphone</p>
+                            </li>
+                            <li
+                                class="w-full bg-white  flex flex-col items-center justify-center sm:gap-[1dvw] gap-1.5 relative sm:py-[1.8dvw] py-6  system-box check-system">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    class="sm:w-[2.5dvw] sm:h-[2.5dvw] w-10 h-10" viewBox="0 0 47.132 60.632">
+                                    <defs>
+                                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
+                                            gradientUnits="objectBoundingBox">
+                                            <stop offset="0" stop-color="#d7734f" />
+                                            <stop offset="1" stop-color="#c95c93" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g id="web-camera_1_" data-name="web-camera (1)" transform="translate(-57)">
+                                        <path id="Path_20" data-name="Path 20"
+                                            d="M100.741,382.687a20.057,20.057,0,0,0-3.467-4.11,27.1,27.1,0,0,1-33.415,0,20.06,20.06,0,0,0-3.467,4.11A22.443,22.443,0,0,0,57,392.5a1.776,1.776,0,0,0,1.773,1.879h43.579a1.776,1.776,0,0,0,1.773-1.879A22.441,22.441,0,0,0,100.741,382.687Z"
+                                            transform="translate(-0.001 -333.745)" fill="url(#linear-gradient)" />
+                                        <path id="Path_21" data-name="Path 21"
+                                            d="M198.257,148.76a7.737,7.737,0,1,0-7.757-7.737A7.756,7.756,0,0,0,198.257,148.76Zm0-9.513a1.776,1.776,0,1,1-1.776,1.776A1.807,1.807,0,0,1,198.257,139.247Z"
+                                            transform="translate(-117.691 -117.502)" fill="url(#linear-gradient)" />
+                                        <path id="Path_22" data-name="Path 22"
+                                            d="M80.566,47.042A23.521,23.521,0,1,0,57,23.521,23.57,23.57,0,0,0,80.566,47.042Zm0-34.81a11.29,11.29,0,1,1-11.309,11.29A11.312,11.312,0,0,1,80.566,12.231Z"
+                                            transform="translate(0)" fill="url(#linear-gradient)" />
+                                    </g>
+                                </svg>
+                                <p class="text-center sm:text-[1dvw] leading-normal  text-sm capitalize">Camera</p>
+                            </li>
+                            <li
+                                class="w-full bg-white  flex flex-col items-center justify-center sm:gap-[1dvw] gap-1.5 relative sm:py-[1.8dvw] py-6  system-box check-system">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    class="sm:w-[2.5dvw] sm:h-[2.5dvw] w-10 h-10" viewBox="0 0 59.168 49.778">
+                                    <defs>
+                                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
+                                            gradientUnits="objectBoundingBox">
+                                            <stop offset="0" stop-color="#d7734f" />
+                                            <stop offset="1" stop-color="#c95c93" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g id="headphone-symbol_1_" data-name="headphone-symbol (1)"
+                                        transform="translate(0 -22.804)">
+                                        <g id="Group_362" data-name="Group 362" transform="translate(0 22.804)">
+                                            <path id="Path_10" data-name="Path 10"
+                                                d="M62.743,147.015v20.263a2.183,2.183,0,1,0,4.367,0V147.015a2.183,2.183,0,1,0-4.367,0Z"
+                                                transform="translate(-49.825 -119.708)" fill="url(#linear-gradient)" />
+                                            <path id="Path_11" data-name="Path 11"
+                                                d="M6.064,72.582h4.808V48.525a3.055,3.055,0,0,0,.034-.349,18.673,18.673,0,1,1,37.345,0,3.038,3.038,0,0,0,.047.466v23.94h4.808a6.171,6.171,0,0,0,6.062-6.273V53.763a6.248,6.248,0,0,0-4.377-6.022,25.213,25.213,0,0,0-50.424.005A6.242,6.242,0,0,0,0,53.765V66.309A6.172,6.172,0,0,0,6.064,72.582Z"
+                                                transform="translate(0 -22.804)" fill="url(#linear-gradient)" />
+                                            <path id="Path_12" data-name="Path 12"
+                                                d="M203.454,147.015v20.263a2.183,2.183,0,1,0,4.366,0V147.015a2.183,2.183,0,1,0-4.366,0Z"
+                                                transform="translate(-161.566 -119.708)" fill="url(#linear-gradient)" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-center sm:text-[1dvw] leading-normal text-sm capitalize">Audio</p>
+                            </li>
+                            <li
+                                class="w-full bg-white  flex flex-col items-center justify-center sm:gap-[1dvw] gap-1.5 relative sm:py-[1.8dvw] py-6 system-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    class="sm:w-[2.5dvw] sm:h-[2.5dvw] w-10 h-10" viewBox="0 0 51.164 59">
+                                    <defs>
+                                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
+                                            gradientUnits="objectBoundingBox">
+                                            <stop offset="0" stop-color="#d7734f" />
+                                            <stop offset="1" stop-color="#c95c93" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g id="Layer_x0020_1" transform="translate(-34)">
+                                        <path id="Path_15" data-name="Path 15"
+                                            d="M89.285,41.945A21.265,21.265,0,0,1,72.346,25.121c2.42,2.189,6.8,3.918,12.1,4.84C85.367,35.146,87.1,39.525,89.285,41.945ZM86.174,30.307a45.987,45.987,0,0,0,7.029.461,45.987,45.987,0,0,0,7.029-.461c-1.268,6.8-4.033,11.984-7.029,11.984S87.441,37.105,86.174,30.307Zm15.787-.346c5.3-.922,9.68-2.65,12.1-4.84A21.265,21.265,0,0,1,97.121,41.945C99.311,39.525,101.039,35.146,101.961,29.961ZM72,21.2c0-3.111,5.3-5.762,12.1-7.029a45.987,45.987,0,0,0-.461,7.029,46.987,46.987,0,0,0,.461,7.029C77.3,26.85,72,24.2,72,21.2Zm13.828-7.375a47.488,47.488,0,0,1,14.75,0,50.039,50.039,0,0,1,.576,7.26,53.275,53.275,0,0,1-.576,7.49,51.737,51.737,0,0,1-7.375.461,51.737,51.737,0,0,1-7.375-.461,53.276,53.276,0,0,1-.576-7.49A50.04,50.04,0,0,1,85.828,13.828Zm16.479.346c6.8,1.268,12.1,3.918,12.1,7.029,0,3-5.3,5.646-12.1,7.029a46.987,46.987,0,0,0,.461-7.029A45.987,45.987,0,0,0,102.307,14.174ZM72.346,17.285A21.384,21.384,0,0,1,89.4.346c-2.3,2.42-4.033,6.8-4.955,11.984C79.145,13.367,74.766,15.1,72.346,17.285ZM93.2,0c3,0,5.762,5.3,7.029,12.1a43.167,43.167,0,0,0-14.059,0C87.441,5.3,90.207,0,93.2,0Zm3.8.346a21.384,21.384,0,0,1,17.055,16.939c-2.42-2.189-6.8-4.033-12.1-4.955C101.039,7.145,99.311,2.766,97.006.346Z"
+                                            transform="translate(-33.621)" fill-rule="evenodd"
+                                            fill="url(#linear-gradient)" />
+                                        <path id="Path_16" data-name="Path 16"
+                                            d="M229.029,398.174h-6.223a.788.788,0,0,1-.807-.807v-6.223a.891.891,0,0,1,.807-.922h2.3V384a2.242,2.242,0,0,0,1.729,0v6.338h2.189a.822.822,0,0,1,.922.807v6.223A.891.891,0,0,1,229.029,398.174Z"
+                                            transform="translate(-166.336 -339.75)" fill-rule="evenodd"
+                                            fill="url(#linear-gradient)" />
+                                        <path id="Path_17" data-name="Path 17"
+                                            d="M133.492,466.729H119.318a.822.822,0,0,1-.807-.922.788.788,0,0,1,.807-.807h14.289a.788.788,0,0,1,.807.807A.848.848,0,0,1,133.492,466.729Zm-20.4,0H98.922a.848.848,0,0,1-.922-.922.822.822,0,0,1,.922-.807H113.1a.788.788,0,0,1,.807.807A.822.822,0,0,1,113.1,466.729Z"
+                                            transform="translate(-56.625 -411.416)" fill-rule="evenodd"
+                                            fill="url(#linear-gradient)" />
+                                        <path id="Path_18" data-name="Path 18"
+                                            d="M38.609,442.1a4.552,4.552,0,1,1,0-9.1,4.428,4.428,0,0,1,4.494,4.494A4.526,4.526,0,0,1,38.609,442.1Z"
+                                            transform="translate(0 -383.103)" fill-rule="evenodd"
+                                            fill="url(#linear-gradient)" />
+                                        <path id="Path_19" data-name="Path 19"
+                                            d="M403.494,442.1a4.552,4.552,0,0,1,0-9.1,4.552,4.552,0,1,1,0,9.1Z"
+                                            transform="translate(-322.939 -383.103)" fill-rule="evenodd"
+                                            fill="url(#linear-gradient)" />
+                                    </g>
+                                </svg>
+                                <p class="text-center sm:text-[1dvw] text-sm leading-normal capitalize">
+                                    Internet Bandwidth
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-center sm:gap-[0.4dvw] gap-1.5">
+                            <input type="checkbox" name="agree" id="agree" class="agree-input" />
+                            <label for="agree"
+                                class="text-black sm:text-[0.9dvw] text-sm cursor-pointer leading-normal">
+                                i agree with <a href="#" class="underline">Terms & Condition</a>
+                                & <a href="#" class="underline">Privacy Policy</a>.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center flex-wrap sm:gap-[1.4dvw] gap-2 w-full">
+                        <button class="btn-liner">Cancel</button>
+                        <button class="btn-liner">Make Test Call</button>
+                        <button class="btn-liner">Start Interview</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full text-center bg-liner p-2 sm:p-[0.3dvw]">
+                <p class="text-white text-xs sm:text-[0.9dvw] leading-normal">
+                    Copyright@ inlnacer.in. All Right Reserved.
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
