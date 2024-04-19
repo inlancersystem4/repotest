@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sniper AI - Interview</title>
+
+    <!-- Include the jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .overlaye {
+            width: 100%;
+            position: fixed;
+            inset: 0;
+            height: 100%;
+            background-color: black;
+            opacity: 0.6;
+        }
+
+        .modal {
+            position: absolute;
+            z-index: 50;
+        }
+
+        .modal.top-center-align {
+            left: 50%;
+            top: 10%;
+            transform: translateX(-50%);
+        }
+
+        .modal.medium {
+            width: 100%;
+            max-width: 96%;
+        }
+
+        .modal-header {
+            background: transparent linear-gradient(90deg, #B74672 0%, #D8744C 100%) 0% 0%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px;
+        }
+
+        .modal-title {
+            font-size: 16px;
+            color: white;
+            font-weight: normal;
+        }
+
+        .modal_close-btn {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            cursor: pointer;
+            outline: none;
+            border: 1px solid transparent;
+        }
+
+        .modal_close-btn svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .modal_close-btn:hover,
+        .modal_close-btn:focus {
+            border: 1px solid white;
+        }
+
+        .modal-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 16px;
+            gap: 16px;
+            background-color: #EEEEEE;
+        }
+
+        .btn-liner {
+            background: transparent linear-gradient(65deg, #C95C93 0%, #D8744C 100%) 0% 0%;
+            transition: background-image 0.2s;
+            color: white;
+            border-radius: 12px;
+            padding: 12px 18px;
+            text-align: center;
+            font-size: 14px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .btn-liner:hover,
+        .btn-liner:focus {
+            background: transparent linear-gradient(65deg, #D8744C 0%, #C95C93 100%) 0% 0%;
+        }
+
+        @media (min-width: 1024px) {
+            .btn-liner {
+                border-radius: 0.6dvw;
+                padding: 0.9dvw 1.8dvw;
+                font-size: 1dvw;
+            }
+        }
+
+        .modal-body {
+            background-color: white;
+            width: 100%;
+            padding: 16px;
+        }
+
+        .modal-section-title {
+            color: #355374;
+            font-size: 14px;
+        }
+
+        .tab-list {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            list-style-type: none;
+            margin-top: 12px;
+        }
+
+        .tab-list .tab-btn {
+            font-size: 14px;
+            color: #355374;
+            background-color: transparent;
+            border: 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+
+        .tab-list .tab-btn .checked-box {
+            width: 14px;
+            height: 14px;
+            border-radius: 0;
+            border: 1px solid #707070;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .tab-list .tab-btn.active .checked-box {
+            opacity: 1;
+            border: 1px solid #cb5d92;
+        }
+
+        .tab-list .tab-btn.active .checked-box::after {
+            background: transparent linear-gradient(65deg, #D8744C 0%, #C95C93 100%) 0% 0%;
+        }
+
+        .tab-list .tab-btn .checked-box::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: 50%;
+            border: 0;
+            background-color: #707070;
+        }
+
+        .tab-content {
+            display: none;
+            margin-top: 18px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            margin-bottom: 8px;
+            display: block;
+            color: #355374;
+        }
+
+        .input-group select {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 12px;
+            font-size: 16px;
+            border: 1px solid #707070;
+            color: #355374;
+            appearance: none;
+            position: relative;
+            background-image: url('./img/selectArrow.svg');
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: right 8px center;
+        }
+
+        /* .input-group select:after {
+            content: "12";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 12%;
+            width: 24px;
+            height: 24px;
+            background-color: black;
+            z-index: 1000;
+            border-style: solid;
+            border-width: 24px 12px 0 12px;
+            border-color: #000000 transparent transparent transparent;
+        } */
+
+        .template-questions {
+            padding: 0;
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .template-questions li {
+            font-size: 14px;
+            margin-bottom: 12px;
+            color: #355374;
+            font-weight: 700;
+        }
+
+        .interview-timeing {
+            padding-top: 14px;
+            margin-top: 14px;
+            border-top: 1px solid #707070;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .interview-timeing .timeing {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .interview-timeing .timeing .title {
+            font-size: 12px;
+            color: #355374;
+        }
+
+        .interview-timeing .timeing .sub-title {
+            font-size: 12px;
+            color: #355374;
+        }
+
+        .interview-timeing .timeing .timeing-box {
+            font-size: 12px;
+            border: 1px solid #707070;
+            border-radius: 8px;
+            padding: 8px 12px;
+            color: #355374;
+        }
+
+        .customize-questions-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .customize-questions-list li {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .customize-questions-list li .dragger-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: 1px solid transparent;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            border-radius: 6px;
+        }
+
+        .customize-questions-list li .dragger-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .customize-questions-list li .dragger-btn:hover,
+        .customize-questions-list li .dragger-btn:focus {
+            background-color: #EEEEEE;
+        }
+
+        .customize-questions-list li .question-detail {
+            display: flex;
+            align-items: flex-end;
+            flex: 1;
+            gap: 14px;
+        }
+
+        .customize-questions-list li .question-detail button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: 1px solid transparent;
+            cursor: pointer;
+            min-width: 20px;
+            min-height: 20px;
+            max-width: 20px;
+            max-height: 20px;
+            border-radius: 6px;
+        }
+
+        .customize-questions-list li .question-detail button:hover,
+        .customize-questions-list li .question-detail button:focus {
+            background-color: #EEEEEE;
+        }
+
+        .customize-questions-list li .question-detail button svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .customize-questions-list li .question-detail .input-group {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .customize-questions-list li .question-detail .input-group label {
+            display: block;
+            font-size: 12px;
+            cursor: pointer;
+            color: #355374;
+        }
+
+        .customize-questions-list li .question-detail .input-group input {
+            width: 100%;
+            font-size: 12px;
+            padding: 8px 10px;
+            border-radius: 6px;
+            color: #355374;
+            border: 1px solid #707070;
+        }
+
+
+        @media (min-width:1024px) {
+            .modal.medium {
+                max-width: 36dvw;
+            }
+
+            .modal-footer {
+                padding: 1dvw;
+                gap: 1dvw;
+            }
+
+            .modal-header {
+                padding: 1dvw;
+            }
+
+            .modal-title {
+                font-size: 1.4dvw;
+            }
+
+            .modal_close-btn {
+                width: 2.4dvw;
+                height: 2.4dvw;
+            }
+
+
+            .modal_close-btn svg {
+                width: 1.6dvw;
+                height: 1.6dvw;
+            }
+
+            .modal-body {
+                padding: 1.4dvw;
+            }
+
+
+            .template-questions {
+                margin-top: 1dvw;
+            }
+
+            .template-questions li {
+                font-size: 1dvw;
+                margin-bottom: 0.8dvw;
+            }
+
+            .input-group select {
+                padding: 0.8dvw 0.9dvw;
+                border-radius: 0.7dvw;
+                font-size: 1.2dvw;
+            }
+
+            .input-group label {
+                font-size: 1dvw;
+                margin-bottom: 0.6dvw;
+            }
+
+            .tab-list .tab-btn {
+                font-size: 1dvw;
+                gap: 0.3dvw;
+            }
+
+            .tab-list .tab-btn .checked-box {
+                width: 1.2dvw;
+                height: 1.2dvw;
+            }
+
+
+            .modal-section-title {
+                font-size: 1dvw;
+            }
+
+
+            .tab-list {
+                gap: 1.4dvw;
+                margin-top: 0.8dvw;
+            }
+
+            .tab-content {
+                margin-top: 1.8dvw;
+            }
+
+
+            .interview-timeing {
+                padding-top: 1dvw;
+                margin-top: 1dvw;
+                gap: 2dvw;
+            }
+
+            .interview-timeing .timeing {
+                gap: 0.6dvw;
+            }
+
+            .interview-timeing .timeing .title {
+                font-size: 1dvw;
+            }
+
+            .interview-timeing .timeing .sub-title {
+                font-size: 1dvw;
+            }
+
+            .interview-timeing .timeing .timeing-box {
+                font-size: 1dvw;
+                border-radius: 0.6rem;
+                padding: 0.8dvw 1dvw;
+            }
+
+
+            .customize-questions-list {
+                gap: 1.5dvw;
+            }
+
+            .customize-questions-list li {
+                gap: 1dvw;
+            }
+
+            .customize-questions-list li .dragger-btn {
+                width: 2.4dvw;
+                height: 2.4dvw;
+                border-radius: 0.4dvw;
+            }
+
+            .customize-questions-list li .dragger-btn svg {
+                width: 1.6dvw;
+                height: 1.6dvw;
+            }
+
+
+            .customize-questions-list li .question-detail {
+                gap: 1dvw;
+            }
+
+            .customize-questions-list li .question-detail button {
+                min-width: 2.4dvw;
+                min-height: 2.4dvw;
+                max-width: 2.4dvw;
+                max-height: 2.4dvw;
+                border-radius: 0.4dvw;
+            }
+
+
+            .customize-questions-list li .question-detail button svg {
+                width: 1.4dvw;
+                height: 1.4dvw;
+            }
+
+            .customize-questions-list li .question-detail .input-group {
+                max-width: 22.5dvw;
+            }
+
+            .customize-questions-list li .question-detail .input-group label {
+                font-size: 1dvw;
+            }
+
+            .customize-questions-list li .question-detail .input-group input {
+                font-size: 1dvw;
+                padding: 0.6dvw 0.8dvw;
+                border-radius: 0.4dvw;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="modal top-center-align medium">
+        <div class="modal-header">
+            <h4 class="modal-title">Few Questions</h4>
+        </div>
+        <div class="modal-body">
+            <div>
+                <p class="modal-section-title">Select Question</p>
+                <ul class="tab-list">
+                    <li>
+                        <button class="tab-btn active" data-target="tab1">
+                            <div class="checked-box"></div>
+                            Select Template
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tab-btn" data-target="tab2">
+                            <div class="checked-box"></div>
+                            Create Custom Question
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="tab-content active" id="tab1">
+                    <div class="input-group">
+                        <label for="selectTem">Select Template</label>
+                        <select name="Select Template" id="selectTem">
+                            <option value="Option One">Template 1</option>
+                            <option value="Option One">Template 2</option>
+                            <option value="Option One">Template 3</option>
+                        </select>
+                    </div>
+                    <ul class="template-questions">
+                        <li>Question List of "Template1":</li>
+                        <li>1. Your Introduction</li>
+                        <li>2. What Programming Languages Do You Know?</li>
+                        <li>3. Describe Your Project Management Style</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="tab2">
+                    <ul class="customize-questions-list">
+                        <li>
+                            <button class="dragger-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.625 6.75C9.24632 6.75 9.75 6.24632 9.75 5.625C9.75 5.00368 9.24632 4.5 8.625 4.5C8.00368 4.5 7.5 5.00368 7.5 5.625C7.5 6.24632 8.00368 6.75 8.625 6.75Z"
+                                        fill="#191C1F" />
+                                    <path
+                                        d="M15.375 6.75C15.9963 6.75 16.5 6.24632 16.5 5.625C16.5 5.00368 15.9963 4.5 15.375 4.5C14.7537 4.5 14.25 5.00368 14.25 5.625C14.25 6.24632 14.7537 6.75 15.375 6.75Z"
+                                        fill="#191C1F" />
+                                    <path
+                                        d="M8.625 13.125C9.24632 13.125 9.75 12.6213 9.75 12C9.75 11.3787 9.24632 10.875 8.625 10.875C8.00368 10.875 7.5 11.3787 7.5 12C7.5 12.6213 8.00368 13.125 8.625 13.125Z"
+                                        fill="#191C1F" />
+                                    <path
+                                        d="M15.375 13.125C15.9963 13.125 16.5 12.6213 16.5 12C16.5 11.3787 15.9963 10.875 15.375 10.875C14.7537 10.875 14.25 11.3787 14.25 12C14.25 12.6213 14.7537 13.125 15.375 13.125Z"
+                                        fill="#191C1F" />
+                                    <path
+                                        d="M8.625 19.5C9.24632 19.5 9.75 18.9963 9.75 18.375C9.75 17.7537 9.24632 17.25 8.625 17.25C8.00368 17.25 7.5 17.7537 7.5 18.375C7.5 18.9963 8.00368 19.5 8.625 19.5Z"
+                                        fill="#191C1F" />
+                                    <path
+                                        d="M15.375 19.5C15.9963 19.5 16.5 18.9963 16.5 18.375C16.5 17.7537 15.9963 17.25 15.375 17.25C14.7537 17.25 14.25 17.7537 14.25 18.375C14.25 18.9963 14.7537 19.5 15.375 19.5Z"
+                                        fill="#191C1F" />
+                                </svg>
+                            </button>
+                            <div class="question-detail">
+                                <div class="input-group">
+                                    <label for="question_1">Question 1</label>
+                                    <input type="text" name="" id="question_1"
+                                        value="What interests you about  this position?" />
+                                </div>
+                                <button class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17.607" height="17.607"
+                                        viewBox="0 0 17.607 17.607">
+                                        <path id="close_1_" data-name="close (1)"
+                                            d="M10.417,8.939l6.856-6.856A1.141,1.141,0,0,0,15.659.47L8.8,7.326,1.948.47A1.141,1.141,0,0,0,.335,2.083L7.19,8.939.335,15.8a1.141,1.141,0,1,0,1.613,1.613L8.8,10.552l6.856,6.856A1.141,1.141,0,1,0,17.272,15.8Zm0,0"
+                                            transform="translate(0 -0.136)" fill="#cb6294" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dragger-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.625 6.75C9.24632 6.75 9.75 6.24632 9.75 5.625C9.75 5.00368 9.24632 4.5 8.625 4.5C8.00368 4.5 7.5 5.00368 7.5 5.625C7.5 6.24632 8.00368 6.75 8.625 6.75Z"
+                                        fill="#191C1F" />
+                                    <path
+                                        d="M15.375 6.75C15.9963 6.75 16.5 6.24632 16.5 5.625C16.5 5.00368 15.9963 4.5 15.375 4.5C14.7537 4.5 14.25 5.00368 14.25 5.625C14.25 6.24632 14.7537 6.75 15.375 6.75Z"
+                                        fill="#191C1F" />
+                                    <path
+                                        d="M8.625 13.125C9.24632 13.125 9.75 12.6213 9.75 12C9.75 11.3787 9.24632 10.875 8.625 10.875C8.00368 10.875 7.5 11.3787 7.5 12C7.5 12.6213 8.00368 13.125 8.625 13.125Z"
+                                        fill="#191C1F" />
+                                    <path
+                                        d="M15.375 13.125C15.9963 13.125 16.5 12.6213 16.5 12C16.5 11.3787 15.9963 10.875 15.375 10.875C14.7537 10.875 14.25 11.3787 14.25 12C14.25 12.6213 14.7537 13.125 15.375 13.125Z"
+                                        fill="#191C1F" />
+                                    <path
+                                        d="M8.625 19.5C9.24632 19.5 9.75 18.9963 9.75 18.375C9.75 17.7537 9.24632 17.25 8.625 17.25C8.00368 17.25 7.5 17.7537 7.5 18.375C7.5 18.9963 8.00368 19.5 8.625 19.5Z"
+                                        fill="#191C1F" />
+                                    <path
+                                        d="M15.375 19.5C15.9963 19.5 16.5 18.9963 16.5 18.375C16.5 17.7537 15.9963 17.25 15.375 17.25C14.7537 17.25 14.25 17.7537 14.25 18.375C14.25 18.9963 14.7537 19.5 15.375 19.5Z"
+                                        fill="#191C1F" />
+                                </svg>
+                            </button>
+                            <div class="question-detail">
+                                <div class="input-group">
+                                    <label for="question_2">Question 2</label>
+                                    <input type="text" name="" id="question_2"
+                                        value="How do you maintain it securtiy?" />
+                                </div>
+                                <button class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.607 17.607">
+                                        <path id="close_1_" data-name="close (1)"
+                                            d="M10.417,8.939l6.856-6.856A1.141,1.141,0,0,0,15.659.47L8.8,7.326,1.948.47A1.141,1.141,0,0,0,.335,2.083L7.19,8.939.335,15.8a1.141,1.141,0,1,0,1.613,1.613L8.8,10.552l6.856,6.856A1.141,1.141,0,1,0,17.272,15.8Zm0,0"
+                                            transform="translate(0 -0.136)" fill="#cb6294" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 22 22">
+                                        <defs>
+                                            <linearGradient id="linear-gradient" x1="0.86" x2="0.158" y2="0.867"
+                                                gradientUnits="objectBoundingBox">
+                                                <stop offset="0" stop-color="#d7734f" />
+                                                <stop offset="1" stop-color="#cb6294" />
+                                            </linearGradient>
+                                        </defs>
+                                        <g id="Layer_2" data-name="Layer 2" transform="translate(-1 -1)">
+                                            <path id="Path_4" data-name="Path 4"
+                                                d="M20.387,1H7.613A2.616,2.616,0,0,0,5,3.613V5H3.613A2.616,2.616,0,0,0,1,7.613V20.387A2.616,2.616,0,0,0,3.613,23H16.387A2.616,2.616,0,0,0,19,20.387V19h1.387A2.616,2.616,0,0,0,23,16.387V3.613A2.616,2.616,0,0,0,20.387,1ZM17,20.387a.614.614,0,0,1-.613.613H3.613A.614.614,0,0,1,3,20.387V7.613A.614.614,0,0,1,3.613,7H16.387A.614.614,0,0,1,17,7.613Zm4-4a.614.614,0,0,1-.613.613H19V7.613A2.616,2.616,0,0,0,16.387,5H7V3.613A.614.614,0,0,1,7.613,3H20.387A.614.614,0,0,1,21,3.613Z"
+                                                fill="url(#linear-gradient)" />
+                                            <path id="Path_5" data-name="Path 5"
+                                                d="M14,13H11V10a1,1,0,0,0-2,0v3H6a1,1,0,0,0,0,2H9v3a1,1,0,0,0,2,0V15h3a1,1,0,0,0,0-2Z"
+                                                fill="url(#linear-gradient)" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="interview-timeing">
+                    <div class="timeing">
+                        <h6 class="title">Preparation Time</h6>
+                        <div class="timeing-box">01:00</div>
+                        <p class="sub-title">Min</p>
+                    </div>
+                    <div class="timeing">
+                        <h6 class="title">Answer Time</h6>
+                        <div class="timeing-box">02:00</div>
+                        <p class="sub-title">Min</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-liner">Cancel</button>
+            <button class="btn-liner">Send Link</button>
+        </div>
+    </div>
+
+    <div class="overlaye"></div>
+
+    <script>
+        $(document).ready(function () {
+            $(".tab-btn").click(function () {
+                $(".tab-btn").removeClass("active");
+                $(".tab-content").removeClass("active");
+                $(this).addClass("active");
+                var target = $(this).data("target");
+                $("#" + target).addClass("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
