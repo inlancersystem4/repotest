@@ -1,0 +1,883 @@
+@font-face {
+    font-family: 'Little Sunshine';
+    src: url('/fonts/little-sunshine.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KG Lovin On Me';
+    src: url('/fonts/kGLovinOnMe.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Autography';
+    src: url('/fonts/autography.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Insigne Ainslie';
+    src: url('/fonts/insigne-Ainslie-NorReg.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Helveticav Neue';
+    src: url('/fonts/helveticaNeueMedium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Arial Black';
+    src: url('/fonts/arial-black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'American Typewriter';
+    src: url('/fonts/american-typewriter.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ainsley';
+    src: url('/fonts/ainslie.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Arial Black';
+    scroll-behavior: smooth;
+}
+
+/* f logo use font famliy  */
+
+.font-insigne {
+    font-family: 'Insigne Ainslie';
+}
+
+.font-autography {
+    font-family: 'Autography';
+}
+
+.font-helveticav {
+    font-family: 'Helveticav Neue';
+}
+
+.font-ainsley {
+    font-family: 'Ainsley';
+}
+
+.font-arial {
+    font-family: 'Arial Black' !important;
+}
+
+.font-sunshine {
+    font-family: 'Little Sunshine';
+}
+
+/* Close f logo use font famliy  */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-container {
+    @apply max-w-[1338px] mx-auto w-full
+}
+
+
+input[type=number],
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.nav--link {
+    @apply capitalize text-white px-5 py-2 block text-lg tracking-wide w-fit rounded-md border border-solid border-transparent transition-colors outline-none
+}
+
+.nav--link:hover,
+.nav--link:focus,
+.nav--link.active {
+    @apply bg-nav-link-active border-transparent text-nav-bg
+}
+
+
+.tab--link {
+    font-family: 'Helveticav Neue';
+    @apply px-8 min-w-[180px] max-w-[180px] max-h-[80px] flex items-center justify-center text-center rounded-md py-2.5 bg-transparent border border-solid border-base-color text-base-color font-medium tracking-wider outline-none transition-colors
+}
+
+.tab--link:hover,
+.tab--link:focus,
+.tab--link.active,
+.tab--link.router-link-exact-active {
+    @apply bg-nav-bg text-white
+}
+
+.menu--btn {
+    font-family: 'Helveticav Neue';
+    @apply px-2.5 min-w-[100px] max-w-[100px] text-center rounded-md py-2.5 bg-transparent border border-solid border-base-color text-base-color block font-medium tracking-wider outline-none transition-colors
+}
+
+.menu--btn:hover,
+.menu--btn:focus {
+    @apply bg-nav-bg text-white
+}
+
+.modal--title {
+    font-family: 'Autography';
+    @apply text-base-color text-3xl mb-12
+}
+
+.modal--form_btn {
+    font-family: 'Helveticav Neue';
+    @apply bg-nav-bg text-white border tracking-wider border-solid border-base-color text-center min-w-[160px] max-w-[160px] py-2 rounded-md px-4 outline-none transition-colors
+}
+
+.modal--form_btn:disabled {
+    @apply opacity-25 cursor-no-drop
+}
+
+.modal--form_btn:hover,
+.modal--form_btn:focus {
+    @apply bg-transparent text-base-color
+}
+
+.input--group {
+    @apply flex items-center gap-2 flex-nowrap justify-between w-full
+}
+
+.input--group label {
+    font-family: 'Helveticav Neue';
+    @apply text-base-color text-base tracking-wider cursor-pointer
+}
+
+.input--group input,
+.input--group textarea {
+    font-family: 'Helveticav Neue';
+    @apply rounded border border-solid border-base-color border-opacity-50 px-3.5 py-2.5 outline-none text-base w-full
+}
+
+.input--group .type--file {
+    font-family: 'Helveticav Neue';
+    @apply min-h-24 flex items-center justify-center rounded border border-solid border-base-color border-opacity-50 px-3.5 py-2.5 outline-none text-base w-full relative text-base-color
+}
+
+.input--group .type--file input {
+    @apply opacity-0 absolute inset-0 w-full h-full
+}
+
+.input--group input:focus,
+.input--group input:hover,
+.input--group textarea:focus,
+.input--group textarea:hover {
+    @apply border-opacity-100
+}
+
+.input--group textarea {
+    @apply resize-none min-h-24
+}
+
+.category--modal .input--group label {
+    @apply min-w-36 max-w-36
+}
+
+.menu--modal .input--group label {
+    @apply min-w-44 max-w-44
+}
+
+.login--form .input--group label {
+    @apply min-w-32 max-w-32
+}
+
+.item--modal .input--group label {
+    @apply min-w-40 max-w-40
+}
+
+.item--modal .input--group:nth-last-child(1) label {
+    @apply min-w-28 max-w-28
+}
+
+
+.table {
+    @apply w-full border border-solid border-base-color
+}
+
+.table tr {
+    @apply w-full border-b border-solid border-base-color
+}
+
+.table tr th,
+.table tr td {
+    @apply text-base-color px-1.5 py-2.5 text-left border-r border-solid border-base-color text-base capitalize
+}
+
+.table tr td {
+    font-family: 'Helveticav Neue';
+}
+
+.table tr th:last-child,
+.table tr td:last-child {
+    @apply border-r-0;
+}
+
+.table tr:last-child {
+    @apply border-b-0;
+}
+
+.table .action button {
+    @apply py-1.5 px-0.5
+}
+
+.categories-table .image {
+    @apply min-w-[320px] max-w-[320px] flex items-center justify-center
+}
+
+.categories-table .image img {
+    @apply max-w-full h-[100px] object-cover
+}
+
+/* .categories-table .image img {
+    @apply max-w-max h-auto
+} */
+
+.categories-table .eName {
+    @apply min-w-[220px] max-w-[220px]
+}
+
+.categories-table .aName {
+    @apply min-w-[220px] max-w-[220px]
+}
+
+.categories-table .description {
+    @apply min-w-[280px] max-w-[280px] text-center
+}
+
+.categories-table .action {
+    @apply min-w-[280px] max-w-[280px] text-center
+}
+
+
+
+.menu-table .image {
+    @apply min-w-[320px] max-w-[320px] flex items-center justify-center
+}
+
+.menu-table .image img {
+    @apply max-w-full h-[100px] object-cover
+}
+
+/* .menu-table .image img {
+    @apply max-w-max h-auto
+} */
+
+.menu-table .eName {
+    @apply min-w-[240px] max-w-[240px]
+}
+
+.menu-table .aName {
+    @apply min-w-[240px] max-w-[240px]
+}
+
+.menu-table .action {
+    @apply min-w-[240px] max-w-[240px] text-center
+}
+
+
+.item--table .image {
+    @apply min-w-[15%] max-w-[15%]
+}
+
+.item--table .image img {
+    @apply max-w-full h-[100px] object-cover
+}
+
+/* .item--table .image img {
+    @apply max-w-max h-auto
+} */
+
+
+.item--table .edescription {
+    @apply min-w-[15%] max-w-[15%]
+}
+
+.item--table .aName {
+    @apply min-w-[10%] max-w-[10%]
+}
+
+.item--table .aDescription {
+    @apply min-w-[15%] max-w-[15%]
+}
+
+.item--table .category {
+    @apply min-w-[10%] max-w-[10%]
+}
+
+.item--table .menu {
+    @apply min-w-[10%] max-w-[10%]
+}
+
+.item--table .calories {
+    @apply min-w-[10%] max-w-[10%]
+}
+
+.item--table .allergies {
+    @apply min-w-[10%] max-w-[10%]
+}
+
+.item--table .cost {
+    @apply min-w-[10%] max-w-[10%]
+}
+
+.item--table .price {
+    @apply min-w-[10%] max-w-[10%]
+}
+
+.item--table .ratio {
+    @apply min-w-[10%] max-w-[10%]
+}
+
+.item--table .action {
+    @apply min-w-[15%] max-w-[15%]
+}
+
+.web--menu--description {
+    font-family: 'Insigne Ainslie';
+    @apply text-base text-center text-secondary-color leading-7 font-semibold
+}
+
+.web--menu--title {
+    font-family: 'Ainsley';
+    @apply text-xl ltr:text-left rtl:text-right text-base-color capitalize
+}
+
+.web--menu--time {
+    font-family: 'Arial Black';
+    @apply text-base ltr:text-right rtl:text-left text-base-color
+}
+
+.web--menu--img {
+    @apply w-full max-w-full h-36 object-cover
+}
+
+.menu--box {
+    font-family: 'Insigne Ainslie';
+    @apply w-full rounded-md px-2.5 py-4 border border-solid border-base-color space-y-3.5 text-center border-opacity-50
+}
+
+.menu--box img {
+    @apply w-full max-w-full h-[120px] object-cover
+}
+
+.menu--box .menu--item-description {
+    @apply text-sm text-center text-secondary-color leading-6
+}
+
+.menu--item-calories {
+    @apply text-xs text-center text-secondary-color
+}
+
+.menu--page-title {
+    font-family: 'Ainsley';
+    @apply text-xl capitalize
+}
+
+.menu--page-sub_title {
+    font-family: 'Ainsley';
+    @apply text-sm
+}
+
+.menu--item-name {
+    font-family: 'American Typewriter';
+    @apply text-lg text-black tracking-wide font-medium
+}
+
+.menu--item-price {
+    font-family: 'American Typewriter';
+    @apply text-lg text-black tracking-wide font-medium
+}
+
+.bottom-menu-container {
+    @apply w-full overflow-x-auto
+}
+
+.bottom--menu,
+.bottom--menu-second {
+    @apply max-w-3xl w-full fixed bottom-0 left-1/2 -translate-x-1/2 border-t border-solid border-base-color overflow-x-auto flex items-center gap-5 bg-bottom-menu justify-between pt-1 pb-1.5 px-1.5
+}
+
+.bottom--menu .menu--link,
+.bottom--menu-second .menu--link {
+    font-family: 'Ainsley';
+    @apply text-lg block pt-1.5 pb-1 px-3.5 font-semibold text-base-color w-max
+}
+
+
+
+.bottom--menu .menu--link.active {
+    /* background-image: url('/img/seperater.png'); */
+    /* @apply underline underline-offset-8 decoration-base-color  */
+    @apply border-b-2 border-solid border-base-color
+}
+
+.cart--box {
+    @apply border border-solid border-base-color border-opacity-50 absolute top-full min-w-[84dvw] max-w-[84dvw] md:max-w-[720px] md:min-w-[720px] w-full h-[calc(100dvh-360px)] overflow-y-auto overflow-x-hidden ltr:right-2 ltr:left-auto rtl:right-auto rtl:left-2 mt-3 bg-white rounded-lg
+}
+
+.empty--box {
+    @apply w-full h-full flex items-center justify-center
+}
+
+.empty--box .description {
+    font-family: 'Insigne Ainslie';
+    @apply text-sm text-center text-secondary-color leading-6
+}
+
+.empty--box button {
+    font-family: 'Autography';
+    @apply text-2xl text-base-color px-12 py-2 border border-solid border-base-color border-opacity-50
+}
+
+.cart--list {
+    @apply grid grid-cols-2 px-6 py-4 gap-6
+}
+
+.cart--list .menu--box {
+    @apply border-0 p-0 relative
+}
+
+.cart--list .menu--box .remove-item--btn {
+    @apply absolute right-0 -top-3.5 bg-base-color w-7 h-7 flex items-center justify-center bg-opacity-80
+}
+
+.cart--list .menu--box .remove-item--btn:hover,
+.cart--list .menu--box .remove-item--btn:focus {
+    @apply bg-opacity-100
+}
+
+.cart--list .menu--box img {
+    @apply w-full max-w-full h-[90px] object-cover
+}
+
+.cart--lis .menu--item-name {
+    font-family: 'American Typewriter';
+    @apply text-lg text-black
+}
+
+.cart--lis .menu--box .menu--item-description {
+    @apply text-xs text-center text-secondary-color leading-5
+}
+
+.menu--style-second {
+    background-image: url('/img/menu-shap-1.png');
+    @apply h-[calc(100dvh-210px)] mt-4 bg-contain bg-no-repeat bg-center pt-12 relative
+}
+
+.menu--style-second::after {
+    background-image: url('/img/line1.png');
+    content: "";
+    @apply absolute left-1/2 -translate-x-1/2 top-0 w-1 h-full bg-cover
+}
+
+.menu--style-second .inner {
+    @apply h-full overflow-y-auto
+}
+
+.menu--box-second {
+    @apply w-1/2 gap-5 px-1.5 flex flex-col
+}
+
+.menu--box-second .menu--box-head {
+    background-image: url('/img/line2.png');
+    @apply bg-contain bg-no-repeat
+}
+
+.menu--box-second .web--menu--description {
+    @apply text-sm text-center leading-6 w-[90%] mx-auto
+}
+
+.menu--box-second:nth-child(odd) {
+    @apply mr-auto
+}
+
+.menu--box-second:nth-child(odd) .menu--box-head {
+    @apply pb-2 bg-bottom
+}
+
+.menu--box-second:nth-child(even) .menu--box-head {
+    @apply pt-2.5 bg-top
+}
+
+.menu--box-second:nth-child(even) {
+    @apply ml-auto flex-col-reverse
+}
+
+.alert--box {
+    font-family: 'Helveticav Neue';
+    @apply flex w-full max-w-sm mx-auto mt-4 overflow-hidden bg-white rounded-lg shadow-md
+}
+
+.alert--box .icon {
+    @apply flex items-center justify-center sm:w-16 w-14 bg-green-500
+}
+
+.alert--box .title {
+    @apply font-semibold text-green-500
+}
+
+.alert--box .text {
+    @apply text-sm text-gray-600
+}
+
+.delete--sub_title {
+    font-family: 'Helveticav Neue';
+    @apply text-lg
+}
+
+.delete--btn {
+    font-family: 'Helveticav Neue';
+    @apply bg-transparent text-nav-bg border capitalize tracking-wider border-solid border-base-color text-center py-2 rounded-md px-4 outline-none transition-colors
+}
+
+.delete--btn.fill {
+    @apply bg-nav-bg text-white
+}
+
+.delete--btn.fill:hover,
+.delete--btn.fill:focus {
+    @apply bg-transparent text-nav-bg
+}
+
+
+.custom--select {
+    font-family: 'Helveticav Neue';
+    @apply rounded border border-solid border-base-color border-opacity-50 outline-none text-base w-full relative
+}
+
+.select--option {
+    font-family: 'Helveticav Neue';
+    @apply absolute top-full left-0 border border-solid border-base-color overflow-x-auto border-opacity-50 outline-none text-base w-full bg-white z-50 mt-1.5 rounded max-h-[250px] overflow-y-auto shadow-xl !text-left mr-[24px]
+}
+
+.select--option .option {
+    @apply px-2.5 py-1.5 w-full cursor-pointer
+}
+
+.select--option .option:hover,
+.select--option .option:focus {
+    @apply text-base-color
+}
+
+.custom--select .selected-tag {
+    @apply bg-base-color text-white rounded text-base font-normal px-2.5 py-0.5
+}
+
+.select--option .option[data-headlessui-state="selected"] {
+    background-image: url('/public/xCircle.png') !important;
+    @apply bg-[length:24px] bg-no-repeat bg-right
+}
+
+.select--option .option[data-headlessui-state="active selected"]:hover,
+.select--option .option[data-headlessui-state="active selected"]:focus {
+    background-image: url('/public/xCircle.png') !important;
+    @apply bg-[length:24px] bg-no-repeat bg-right
+}
+
+.error--message {
+    font-family: 'Helveticav Neue';
+    @apply text-red-500 text-base line-clamp-1
+}
+
+.sortable-ghost {
+    @apply bg-base-color bg-opacity-10 shadow
+}
+
+button.btn--loader {
+    @apply flex items-center justify-center
+}
+
+button.btn--loader:hover,
+button.btn--loader:focus {
+    @apply bg-base-color text-white
+}
+
+.menu--item.custom--select {
+    @apply border-0
+}
+
+.menu--item.custom--select .justify-between {
+    @apply border border-solid border-base-color border-opacity-50 rounded
+}
+
+.menu--item.custom--select .select--option {
+    @apply relative left-auto top-auto mt-1 py-1
+}
+
+.menu--item.custom--select .select--option .option {
+    background-position: right 12px center !important;
+}
+
+.language--btn {
+    @apply sm:text-lg text-base text-base-color opacity-50
+}
+
+.language--btn.active {
+    @apply opacity-100
+}
+
+.pagination--btn {
+    font-family: 'Helveticav Neue';
+    @apply min-w-[32px] min-h-[32px] max-w-[32px] max-h-[32px] flex items-center justify-center rounded-lg text-lg text-black
+}
+
+.pagination--btn:hover,
+.pagination--btn.active {
+    @apply bg-base-color text-white
+}
+
+.pagination--btn:hover svg path,
+.pagination--btn.active svg path {
+    @apply stroke-white
+}
+
+.pagination--btn:disabled {
+    @apply cursor-no-drop opacity-15
+}
+
+
+.vue-simple-context-menu {
+    @apply !bg-nav-link-active !border border-solid border-base-color !shadow-none min-w-[150px]
+}
+
+.vue-simple-context-menu .vue-simple-context-menu__item {
+    font-family: 'Helveticav Neue';
+    @apply border border-solid border-transparent text-base-color
+}
+
+.vue-simple-context-menu .vue-simple-context-menu__item:hover {
+    @apply bg-nav-bg border-base-color
+}
+
+
+.btn--regular {
+    font-family: 'Helveticav Neue';
+    @apply px-8 flex items-center justify-center text-center rounded-md py-2.5 bg-transparent border border-solid border-base-color text-base-color font-medium tracking-wider outline-none transition-colors
+}
+
+.btn--regular.fill {
+    @apply bg-nav-bg text-white
+}
+
+.btn--regular.fill:hover,
+.btn--regular.fill:focus,
+.btn--regular.fill.active {
+    @apply bg-transparent text-base-color
+}
+
+.btn--regular:hover,
+.btn--regular:focus,
+.btn--regular.active {
+    @apply bg-nav-bg text-white
+}
+
+input.btn--regular {
+    @apply px-1.5
+}
+
+input.btn--regular::placeholder {
+    @apply text-base-color
+}
+
+input::placeholder {
+    @apply text-base-color
+}
+
+input.btn--regular:hover,
+input.btn--regular:focus,
+input.btn--regular.active {
+    @apply bg-transparent text-base-color
+}
+
+
+.right--side-booking-table {
+    @apply flex items-stretch divide-x divide-base-color
+}
+
+.right--side-booking-table li {
+    font-family: 'Helveticav Neue';
+    @apply text-sm text-base-color px-1
+}
+
+.right--side-booking-table li button {
+    @apply underline
+}
+
+.floor-tables-table .table-name {
+    @apply min-w-[100px] max-w-[100px] text-center
+}
+
+.floor-tables-table .seats {
+    @apply min-w-[10%] max-w-[10%] text-center
+}
+
+.floor-tables-table .area {
+    @apply min-w-[200px] max-w-[200px]
+}
+
+.floor-tables-table .tables-booked {
+    @apply min-w-[20%] max-w-[20%] text-center
+}
+
+.floor-tables-table .action {
+    @apply min-w-[100px] max-w-[100px] text-center
+}
+
+.floor--notifications-list li {
+    font-family: 'Ainsley';
+    @apply text-sm pb-2 text-center bg-white text-base-color
+}
+
+.floor-service-options {
+    font-family: 'Helveticav Neue';
+    @apply text-base text-base-color flex items-end gap-2 p-1.5 outline-none border-b-2 border-solid border-transparent
+}
+
+.floor-service-options span {
+    font-family: 'Arial Black';
+    @apply text-lg
+}
+
+.floor-service-options:hover,
+.floor-service-options:focus,
+.floor-service-options.active {
+    @apply border-base-color
+}
+
+.users-table .full-name {
+    @apply min-w-[210px] max-w-[210px]
+}
+
+.users-table .pass {
+    @apply text-center
+}
+
+.users-table .action {
+    @apply text-center
+}
+
+.added--basket-box {
+    @apply min-w-[320px] max-w-xs mx-auto rounded-md border border-solid border-base-color space-y-6 p-6 bg-white
+}
+
+.added--basket-box .title {
+    font-family: 'Ainsley';
+    @apply uppercase text-lg text-center text-base-color font-semibold
+}
+
+.added--basket-box .icon {
+    @apply border-2 border-solid border-black flex items-center justify-center mx-auto w-28 h-28 rounded-2xl
+}
+
+.added--basket-box .circle {
+    @apply border-2 border-solid border-black rounded-full w-24 h-24 mx-auto flex items-center justify-center
+}
+
+.added--basket-box .circle svg {
+    @apply w-16 h-auto
+}
+
+
+.costing--table-title {
+    @apply text-base text-primary-color
+}
+
+.costing--table th {
+    font-family: 'Helveticav Neue';
+    @apply bg-primary-color !text-white !font-normal !text-center
+}
+
+.ingredient--table .item {
+    @apply text-center min-w-[120px] max-w-[120px]
+}
+
+.ingredient--table .supplier {
+    @apply text-center min-w-[120px] max-w-[120px]
+}
+
+.ingredient--table .vat {
+    @apply text-end min-w-[90px] max-w-[90px]
+}
+
+.ingredient--table .purchase {
+    @apply text-end min-w-[140px] max-w-[140px]
+}
+
+
+.calculation--table .name {
+    @apply text-center min-w-[210px] max-w-[210px]
+}
+
+
+.calculation--table .sell {
+    @apply text-end
+}
+
+.calculation--table .cost {
+    @apply text-end
+}
+
+.calculation--table .ratio {
+    @apply text-end
+}
+
+
+
+.menu-item--table .item {
+    @apply text-center min-w-[210px] max-w-[210px]
+}
+
+
+.menu-item--table .sell {
+    @apply text-end
+}
+
+.menu-item--table .cost {
+    @apply text-end
+}
+
+.menu-item--table .ratio {
+    @apply text-end
+}
+
+.vc-pane-container {
+    font-family: 'Insigne Ainslie';
+}
+
+.vc-highlight-bg-solid {
+    @apply !bg-base-color
+}
+
+.vc-nav-item.is-active {
+    @apply !bg-base-color
+}
+
+.vc-bordered {
+    @apply !border-primary-color !rounded-none
+}
+
+.reservation--form-wrapper {
+    font-family: 'Insigne Ainslie';
+    @apply w-[90%] max-w-[420px] mx-auto border border-solid border-base-color rounded-lg bg-bottom-menu p-3
+}
+
+.otp-input-container {
+    @apply !justify-center gap-4
+}
+
+.otp-input {
+    @apply bg-white block mx-auto w-full !size-12 border border-solid border-base-color rounded-sm py-2 px-3 outline-none overflow-hidden text-center
+}
+
+.otp-input.is-complete {
+    @apply bg-primary-color bg-opacity-50
+}
