@@ -1,1 +1,0 @@
-import{f as o,b as e}from"./index-CObJ0xdd.js";const n="https://stagingapi.fandfrestaurants.com/admin",l=async(t,s)=>{try{const r=await o.post(`${n}/${t}`,s);return r.success==1?r:(e().error(r.message),null)}catch(r){e().error(r)}};export{l as i};
