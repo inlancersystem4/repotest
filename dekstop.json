@@ -5,7 +5,7 @@
     "platforms": {
         "windows-x86_64": {
             "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYzl0ZTMwQzI4U2EzVHJIa1RHUlZ4dTVwVnhUMUluTUJQaWJwSXJ2TVlhK2kxTk1DRlk5dXJvN1RWQkw1VU5VMU5NNEFoMTVoUnFlUmF1aUFDNkJ4OE9HUTNNRmk3UkE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0Nzg3NjIwCWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuMF94NjRfZW4tVVMubXNpClZkMFhKV1hJOFRZYzNKN0VvNzBaNGhBb2pNWkNGa1FmWk1SRnZ5Y0llK0tjS1k3RGlaaGhqOWdSdWNPVXhIYnhLQUpwem1vditiRWFZNExtc0VxT0FRPT0K",
-            "url": "https://github.com/prdip/aquaculture-tauri/releases/download/tauri/ezyZip.zip"
+            "url": "https://github.com/prdip/aquaculture-tauri/releases/download/tauri/aquaculture-desktop_0.1.0_x64_en-US.msi"
         }
     }
 }
