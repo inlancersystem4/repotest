@@ -5,7 +5,7 @@
     "platforms": {
         "windows-x86_64": {
             "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYzl0ZTMwQzI4U1hNVGo2RStSTTJGSFJKZHZhNEdVc2dDSTVOU0RtTzBISSt4R0QvbzFOenZRd1hoekJMQzZHNFhlTkowWS9BNUFLRnhYbS83cHJvbEFDSmlCUTFiRndBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ1MjE5NjI5CWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuMF94NjRfZW4tVVMubXNpCm9aZUdraEFJNC9OUzRYSmhVU25BSjExMWxVVjlCek9YVGdHTVFWdzlwRnFoUUlzMHh6TENadWJwQlhaQnJ0TUVJRWFYYk5yQ1NiL0Frdmc2cmw2U0N3PT0K",
-            "url": "https://github.com/prdip/aquaculture-tauri/releases/download/tauri/aquaculture-desktop_0.1.0_x64_en-US.msi"
+            "url": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_0.1.0_x64_en-US.msi"
         }
     }
 }
