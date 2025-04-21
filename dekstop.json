@@ -1,10 +1,10 @@
 {
     "version": "v0.1.1",
     "notes": "this is update test",
-    "pub_date": "2025-04-16T00:00:00Z",
+    "pub_date": "2025-04-21T00:00:00Z",
     "platforms": {
         "windows-x86_64": {
-            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYzl0ZTMwQzI4U2EzVHJIa1RHUlZ4dTVwVnhUMUluTUJQaWJwSXJ2TVlhK2kxTk1DRlk5dXJvN1RWQkw1VU5VMU5NNEFoMTVoUnFlUmF1aUFDNkJ4OE9HUTNNRmk3UkE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0Nzg3NjIwCWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuMF94NjRfZW4tVVMubXNpClZkMFhKV1hJOFRZYzNKN0VvNzBaNGhBb2pNWkNGa1FmWk1SRnZ5Y0llK0tjS1k3RGlaaGhqOWdSdWNPVXhIYnhLQUpwem1vditiRWFZNExtc0VxT0FRPT0K",
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSYzl0ZTMwQzI4U1hNVGo2RStSTTJGSFJKZHZhNEdVc2dDSTVOU0RtTzBISSt4R0QvbzFOenZRd1hoekJMQzZHNFhlTkowWS9BNUFLRnhYbS83cHJvbEFDSmlCUTFiRndBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ1MjE5NjI5CWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuMF94NjRfZW4tVVMubXNpCm9aZUdraEFJNC9OUzRYSmhVU25BSjExMWxVVjlCek9YVGdHTVFWdzlwRnFoUUlzMHh6TENadWJwQlhaQnJ0TUVJRWFYYk5yQ1NiL0Frdmc2cmw2U0N3PT0K",
             "url": "https://github.com/prdip/aquaculture-tauri/releases/download/tauri/aquaculture-desktop_0.1.0_x64_en-US.msi"
         }
     }
