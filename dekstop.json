@@ -1,11 +1,11 @@
 {
-    "version": "v0.1.2",
-    "notes": "this is update new test",
-    "pub_date": "2025-04-28T00:00:00Z",
+    "version": "v0.1.4",
+    "notes": "This is update for app test for serial for some fixess and added new remove AppData function",
+    "pub_date": "2025-05-08T00:00:00Z",
     "platforms": {
         "windows-x86_64": {
-            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ3lOS2tYQjlZaWE0L3lkU0ZsekZrQzhBVWdFdzlwNXZ1TzBFbGdEVFFpYnRsaVh5eEhjbE0zTk1uODVBa291WWJVVlBmcDg3cFFBeWdUSkV2U1M1cU9XVW5rYXY4dmc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ1ODE3OTU1CWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuMl94NjRfZW4tVVMubXNpCjNjaVhkS054dGhzRVA4K2E2ZzFlOVh6MlhMUXY4UGVDZFFhbDZMTHpEalJKdTl6TEpVcFRwc0loN3R4bWc0QUcvNlduL2pqbmk3T3NQN2I2emhtQUFnPT0K",
-            "url": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_0.1.2_x64_en-US.msi"
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ3lOS2tYQjlZaVRpdEpxQXdOQXAwbXFiT3M1d2ZhMWhMQUd0R0RkZGttTjQxMlJyLzRlcXpaKzJKK0dHZVBnRjZvbzBCRU5TR0Q5ZzZGZXRVb3QzVE1hNEJUSExZb3cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ2NzA0MTM1CWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuNF94NjRfZW4tVVMubXNpCkhwSk8zYlBXYVFXQWsvODZXY0tCVFRwbC9QaG9QZGplOVhLSWVkRCtWbldQci9oMmMzUVk1d21yakpUSVRBanpMUmtxNlhKd0FDakozZEFocThJL0NnPT0K",
+            "url": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_0.1.4_x64_en-US.msi"
         }
     }
 }
