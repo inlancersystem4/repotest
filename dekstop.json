@@ -1,11 +1,11 @@
 {
-    "version": "v0.1.25",
-    "notes": "release vesrion 0.1.25",
-    "pub_date": "2025-06-16T00:00:00Z",
+    "version": "v0.1.26",
+    "notes": "release vesrion 0.1.26",
+    "pub_date": "2025-06-17T00:00:00Z",
     "platforms": {
         "windows-x86_64": {
-            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ3lOS2tYQjlZaWZWNVdHdkxva1AvbFdkVmV3eVhwMVZpTTRKNlA0emdVRnliRFVtQ1U5bkpIbi9RWTdXMmVLenhqdnNGUHZvNExmQ3NSbEVmZDB3WTNEWGRJVVBxYkE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzUwMDc0MjI5CWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuMjVfeDY0X2VuLVVTLm1zaQp2ajI4Sit1dDlsVkdFMWIxRkJ6NzduSXRPdFpEdHNTdFRMOXNkdUZ4K1Zwd2sxME1uUGdWQnV3Mmo1WFIxNWozRnNFSld1em1Sb1l0WnJma0ZTZkFEZz09Cg==",
-            "url": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_0.1.25_x64_en-US.msi"
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ3lOS2tYQjlZaVk2d1dHUEY5RkxLQ3YxaHh5SW0vRWNCSTJXY1dDaDQrWG1xc0gyQmF2ZUwrT3IrVlRadmg5K1pXN29tS3FKL2h6ZzNGRWI4UDB6Rmd6Q2ZoQ29tTkF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzUwMTM5ODEwCWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuMjZfeDY0X2VuLVVTLm1zaQoyenNaZEF1c2pvbnhPTWc5RWhSQ2VZNThJbVdvSmVVRHJ1YkpuWUxTMmY2bUJ2RExndFJlQXhPZWdKaXBaL1VUMmZKU3Q3Sm1LVStSMG1PLzJpd29DZz09Cg==",
+            "url": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_0.1.26_x64_en-US.msi"
         }
     }
 }
