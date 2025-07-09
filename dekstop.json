@@ -5,7 +5,9 @@
     "platforms": {
         "windows-x86_64": {
             "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ3lOS2tYQjlZaVM1VERyblpBd1lPTGZRRU9RdDhMRWl4SFhxRmRENFRPUUJiajRyWnZId0gwS3ViWFpjMkl2QzFmSVFIVVNGV3hTNkt5bmNlUzcyUHVkN1ZheDBnaVFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzUxNjMwMjQ0CWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuMzhfeDY0X2VuLVVTLm1zaQpRazZWM0JVTC85OG5KbUxxTExKTWxUQ1kza0wwclVqMmxtckQxeENJZVVjSkRrN01qZzF1Q3ZzY1padkN0WkFLYXJjNXp4cms2cDNTdEJEcWt2cVlDUT09Cg==",
-            "url": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_0.1.38_x64_en-US.msi"
+            "signature_new": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ3lOS2tYQjlZaVVHTWJaWVp4dmhNSUtvN1ArVk1MZStRbExnYnVLN1YxcHV6Z25WQjdiSUtOa1VVUnlEc3Z0dGZUWms3bnFkRGZwVmM4eW1yR21NUW85Z0JyZjROUGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzUyMDM2Njc4CWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuMzlfeDY0X2VuLVVTLm1zaQpwMzlsTVVSajlTeUpHK1pGb2lxaEcwd3hqbWNFTW82YVJtMEo4RmpJMmtYWENxT0VaTWFEc29IZG4wMCtjZWFLTnhsWnN3Z1pkOWFpMlZiT2FtUHFDdz09Cg==",
+            "url": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_0.1.38_x64_en-US.msi",
+            "url_new": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_0.1.39_x64_en-US.msi"
         }
     }
 }
