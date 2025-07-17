@@ -1,13 +1,11 @@
 {
-    "version": "v0.1.38",
-    "notes": "release vesrion 0.1.38",
-    "pub_date": "2025-07-04T00:00:00Z",
+    "version": "v1.0.0",
+    "notes": "release vesrion 0.1.1",
+    "pub_date": "2025-07-17T00:00:00Z",
     "platforms": {
         "windows-x86_64": {
-            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ3lOS2tYQjlZaVM1VERyblpBd1lPTGZRRU9RdDhMRWl4SFhxRmRENFRPUUJiajRyWnZId0gwS3ViWFpjMkl2QzFmSVFIVVNGV3hTNkt5bmNlUzcyUHVkN1ZheDBnaVFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzUxNjMwMjQ0CWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuMzhfeDY0X2VuLVVTLm1zaQpRazZWM0JVTC85OG5KbUxxTExKTWxUQ1kza0wwclVqMmxtckQxeENJZVVjSkRrN01qZzF1Q3ZzY1padkN0WkFLYXJjNXp4cms2cDNTdEJEcWt2cVlDUT09Cg==",
-            "signature_new": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ3lOS2tYQjlZaVVHTWJaWVp4dmhNSUtvN1ArVk1MZStRbExnYnVLN1YxcHV6Z25WQjdiSUtOa1VVUnlEc3Z0dGZUWms3bnFkRGZwVmM4eW1yR21NUW85Z0JyZjROUGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzUyMDM2Njc4CWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8wLjEuMzlfeDY0X2VuLVVTLm1zaQpwMzlsTVVSajlTeUpHK1pGb2lxaEcwd3hqbWNFTW82YVJtMEo4RmpJMmtYWENxT0VaTWFEc29IZG4wMCtjZWFLTnhsWnN3Z1pkOWFpMlZiT2FtUHFDdz09Cg==",
-            "url": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_0.1.38_x64_en-US.msi",
-            "url_new": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_0.1.39_x64_en-US.msi"
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ3lOS2tYQjlZaVZRM1p3RFd3Z0FLZVpYMjhkQ2xuTFVJQ1p5UUlaRU0yTmZxb2cxYVZobDJWZ3c2dFlQR0N0QXQ2R1ExaVkvUDlaU3RDaFpGNlhtVmlCQVlRbUx0YXdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzUyNzU1OTgyCWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8xLjAuMF94NjRfZW4tVVMubXNpCjVKbDRnTW91T3dBRHZRUHk5MkxEWUxzNG9TK2JkNnljUUxZVFY1WG5GYTNlMzNTN3p5eFNiMTFtMVBydnlHakJ5VWZvSFJmdmR4OUlqOUhmcUNHdEN3PT0K",
+            "url": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_1.0.0_x64_en-US.msi"
         }
     }
 }
