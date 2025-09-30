@@ -1,11 +1,11 @@
 {
-  "version": "",
-  "notes": "",
-  "pub_date": "",
+  "version": "v0.1.1",
+  "notes": "test update function",
+  "pub_date": "2025-09-30T00:00:00Z",
   "platforms": {
     "linux-x86_64": {
       "signature": "",
-      "url": ""
+      "url": "http://github.com/inlancersystem4/repotest/releases/download/untagged-d8c949900d2e68d83aad/sagarAqua_motor_0.1.0_amd64.deb"
     },
     "windows-x86_64": {
       "signature": "",
