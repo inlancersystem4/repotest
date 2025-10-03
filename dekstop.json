@@ -1,11 +1,11 @@
 {
-    "version": "v1.0.0",
+    "version": "v0.0.0",
     "notes": "release vesrion 0.1.1",
     "pub_date": "2025-07-17T00:00:00Z",
     "platforms": {
         "windows-x86_64": {
-            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ3lOS2tYQjlZaVZRM1p3RFd3Z0FLZVpYMjhkQ2xuTFVJQ1p5UUlaRU0yTmZxb2cxYVZobDJWZ3c2dFlQR0N0QXQ2R1ExaVkvUDlaU3RDaFpGNlhtVmlCQVlRbUx0YXdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzUyNzU1OTgyCWZpbGU6YXF1YWN1bHR1cmUtZGVza3RvcF8xLjAuMF94NjRfZW4tVVMubXNpCjVKbDRnTW91T3dBRHZRUHk5MkxEWUxzNG9TK2JkNnljUUxZVFY1WG5GYTNlMzNTN3p5eFNiMTFtMVBydnlHakJ5VWZvSFJmdmR4OUlqOUhmcUNHdEN3PT0K",
-            "url": "https://github.com/inlancersystem4/repotest/releases/download/test/aquaculture-desktop_1.0.0_x64_en-US.msi"
+            "signature": "",
+            "url": ""
         }
     }
 }
