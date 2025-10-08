@@ -3,17 +3,9 @@
   "notes": "app update",
   "pub_date": "2025-10-08T00:00:00Z",
   "platforms": {
-    "linux-x86_64": {
-      "signature": "",
-      "url": "http://github.com/inlancersystem4/repotest/releases/download/untagged-d8c949900d2e68d83aad/sagarAqua_motor_0.1.0_amd64.deb"
-    },
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUOWhiZkNpRDhubE8zS0pUUGMxOXd1YzEzTXF5OUhGa3RLRnZmSWtnTWVjV1czK0xoOTRsbm5GSVBjSDd1M3BRdE1DZDRaeHhnUjN5MFlJY2xHTHFnK0ZyalByWXRaZGd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzU5OTE2MzIzCWZpbGU6c2FnYXJBcXVhX21vdG9yXzAuMS4wX3g2NC1zZXR1cC5leGUKb2dSS0tsNVFJWDN2L0dFOVkweFNPaDB3V0VVU3ZacHJUUmNsTVd6TkNXZStWTllnNDZDc2wxY2NxMmhSM2pZWmpBcjFZZTllcXBab1JhYTBsbXB1Qnc9PQo=",
       "url": "https://github.com/inlancersystem4/repotest/releases/download/v1/sagarAqua_motor_0.1.0_x64-setup.exe"
-    },
-    "darwin-x86_64": {
-      "signature": "",
-      "url": ""
     }
   }
 }
