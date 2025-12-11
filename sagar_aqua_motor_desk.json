@@ -1,11 +1,11 @@
 {
-  "version": "v0.3.17",
-  "notes": "app version 0.3.17 update",
-  "pub_date": "2025-12-05T00:00:00Z",
+  "version": "v0.3.18",
+  "notes": "app version 0.3.18 update",
+  "pub_date": "2025-12-11T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUOWhiZkNpRDhubEVKZDFaMnoycG5GcTFac3ZCWTJWZkNRWUVSNHhnRXZEOTNUWmVPRndlMFVWUXdGUExMTHk5UUY0YjY2aFgxKzcwWHJVREFXSy9ldmVQVDZyOExFREFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0OTM0NzMxCWZpbGU6c2FnYXJBcXVhX21vdG9yXzAuMy4xN194NjQtc2V0dXAuZXhlCnhGZWV5NUkyMUZtV1pUZzM3OGRjR2x6Rzd3WTlYaE9wbXQ5WVAvTjF1bXVWb0ZOandhYXhXT29zV2dhd3UwenFvZW1WeVZVT3dhMkhEd3BVaVpjU0J3PT0K",
-      "url": "https://github.com/inlancersystem4/repotest/releases/download/v1/sagarAqua_motor_0.3.17_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUOWhiZkNpRDhubEYrZlBzZ21WeGhUOSs4SFN5MDJXb2ZhbDU5SnF4eFhtdFM2eTJHcnpDZWhnZFFhZCswL3lNNlY2dERrckpBZnBCTHhZbW1jbTlodTNteUdjbUVVZ1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1NDMwNTc2CWZpbGU6c2FnYXJBcXVhX21vdG9yXzAuMy4xOF94NjQtc2V0dXAuZXhlCi84dm5HWGxEVHFTSTBQTFB1SlhCekl3QlRybmFrM3BDQ1dac0tLWjNHTGYxbG5xQVdIOFdpdEtuUlgwY2xyb3V6UGpxbnVoN1NmajVyL2FGODJSVEFBPT0K",
+      "url": "https://github.com/inlancersystem4/repotest/releases/download/v1/sagarAqua_motor_0.3.18_x64-setup.exe"
     }
   }
 }
