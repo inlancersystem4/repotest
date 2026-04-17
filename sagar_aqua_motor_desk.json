@@ -1,11 +1,11 @@
 {
-  "version": "v0.3.40",
-  "notes": "app version 0.3.40 update",
-  "pub_date": "2026-04-06T00:00:00Z",
+  "version": "v0.3.41",
+  "notes": "app version 0.3.41 update",
+  "pub_date": "2026-04-17T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUOWhiZkNpRDhubE9WSi90NXdjUy96MHUzZzl3dDhIMHQ2bytZOTZxb0ZTSmR0a2UzdHRmZC92NFV6Z1Vmdklabmh1ZVFsWUgxQWxsaStPYkY3dW4xZERXVW9rWStHT2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc1NDY3MDI5CWZpbGU6c2FnYXJBcXVhX21vdG9yXzAuMy40MF94NjQtc2V0dXAuZXhlCnp0UmF2SlNPQUJieURsMVV5UlUzOEhvMEVEK09jaWtMcmFhL0ZSKzE3QkZoclZ0cDV5OTdIeWdRYjJpVUozeSt5SVpFdHIyNm4xbUVGS0NTWFVNUkR3PT0K",
-      "url": "https://github.com/inlancersystem4/repotest/releases/download/v1/sagarAqua_motor_0.3.40_x64-setup.exe"
+      "url": "https://github.com/inlancersystem4/repotest/releases/download/v1/sagarAqua_motor_0.3.41_x64-setup.exe"
     }
   }
 }
